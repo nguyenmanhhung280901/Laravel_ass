@@ -63,7 +63,7 @@
             </div>
 
             <div>
-                 <input type="radio" name="" >Male<br>
+                 <input type="radio" name="Male" >Male<br>
                  <input type="radio" name="Female" >Female<br>
             </div>
 
