@@ -14,17 +14,17 @@ class FormController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'identitynumber' => 'required|min:10',
+        $request->validate([
+            'identity number' => 'required|min:10',
             'firstname' => 'required',
             'lastname' => 'required',
             'phone' => 'required',
             'generate' => 'required'
         ],
         [
-            'identitynumber.min' => 'Must be 10 character.'
+            'identity number.min' => 'Must be 10 character.'
         ]
         );
-        return $validated;
+        return 'hello';
     }
 }
